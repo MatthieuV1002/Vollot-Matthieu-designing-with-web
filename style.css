@@ -1,0 +1,122 @@
+/* RESET DE BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* --- BARRE DU HAUT --- */
+.top-bar {
+    background-color: #e4e4e4;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-filters span {
+    margin-left: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* --- STRUCTURE PRINCIPALE --- */
+.main-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* --- BARRE LATÉRALE --- */
+.sidebar {
+    width: 250px;
+    background-color: #8c8c8c;
+    padding: 40px 20px;
+    color: #1a1a1a;
+}
+
+.sidebar ul {
+    list-style-type: none; 
+}
+
+.model-list li {
+    margin-bottom: 20px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.filter-list li {
+    margin-bottom: 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    color: #333;
+}
+
+/* --- ZONE DES PRODUITS --- */
+.products-area {
+    flex-grow: 1;
+    background-color: #383838;
+    padding: 40px;
+}
+
+/* --- LA GRILLE DE CARTES --- */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* --- LE DESIGN D'UNE CARTE PRODUIT --- */
+.product-card {
+    background-color: #c4c4c4;
+    border-radius: 8px;
+    padding: 15px;
+    position: relative;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4); 
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- L'IMAGE DE LA CHAUSSURE --- */
+.shoe-img {
+    width: 100%;
+    height: 150px; /* Fixe une hauteur pour que toutes les cartes soient alignées */
+    object-fit: contain; /* Empêche l'image d'être coupée ou écrasée */
+    margin-bottom: 15px;
+}
+
+/* L'icône coeur */
+.heart-icon {
+    position: absolute;
+    top: 55%;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Le texte dans la carte */
+.card-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.shoe-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.shoe-brand {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.shoe-price {
+    font-size: 14px;
+    font-weight: bold;
+    align-self: flex-end;
+}
