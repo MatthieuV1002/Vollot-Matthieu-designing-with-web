@@ -1,51 +1,51 @@
-/* RESET DE BASE */
+/* réglages de base pour commencer à faire ma page */ 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    margin: 0; /*suppresion des marges par défaut */
+    padding: 0;  /*suppression des marges internes*/
+    box-sizing: border-box; /* pour que les éléments ne s'aggrandissent pas avec les bordures par exemple*/
+    font-family: Arial, sans-serif; /*police de mon site */
 }
 
-/* --- BARRE DU HAUT --- */
-.top-bar {
-    background-color: #e4e4e4;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* partie haute de ma page */
+.top-bar { /* le point sert à faire référence à mon fichier html*/
+    background-color: #e4e4e4; /*couleur de fond utilisée même référence que figma */
+    padding: 20px 40px; /*création d'un espace dans ma barredu haut */
+    display: flex; /* j'utilise pour aligner mes éléments */
+    justify-content: space-between; /*écarte les filtres du titre */
+    align-items: center; /*centrage vertical */
 }
 
 .top-filters span {
-    margin-left: 20px;
-    font-size: 14px;
-    cursor: pointer;
+    margin-left: 20px; /* permet que les textes ne soient pas collés*/
+    font-size: 14px;/* taille de la police*/
+    cursor: pointer; /* fait croire que le lien est cliquable */
 }
 
-/* --- STRUCTURE PRINCIPALE --- */
-.main-container {
+/* partie principale de ma page*/
+.main-container {/* récupération des éléments de ma partie principale */
     display: flex;
-    min-height: 100vh;
+    min-height: 100vh; /*me permet d'avoir toute la hauteur occupée */
 }
 
-/* --- BARRE LATÉRALE --- */
+/* barre latérale*/
 .sidebar {
-    width: 250px;
-    background-color: #8c8c8c;
-    padding: 40px 20px;
-    color: #1a1a1a;
+    width: 250px; /* fixe la largeur de la barre latérale*/
+    background-color: #8c8c8c; /*couleur fond */
+    padding: 40px 20px; /*espace pour éviter que le texte ne touche les bords */
+    color: #1a1a1a; /*couleur texte */
 }
 
 .sidebar ul {
-    list-style-type: none; 
+    list-style-type: none;  /*pour cacher les puces dela liste */
 }
 
 .model-list li {
-    margin-bottom: 20px;
-    font-size: 13px;
-    cursor: pointer;
+    margin-bottom: 20px; /* espacement de chaque ligne*/
+    font-size: 13px; /* taille police*/
+    cursor: pointer; /*fait croire que c'est cliquable */
 }
 
-.filter-list li {
+.filter-list li { /*même utilisation des éléments précédents */
     margin-bottom: 20px;
     font-size: 14px;
     display: flex;
@@ -54,32 +54,32 @@
     color: #333;
 }
 
-/* --- ZONE DES PRODUITS --- */
+/* zone principale */
 .products-area {
-    flex-grow: 1;
+    flex-grow: 1; /*permet de prendre toute la place restante */
     background-color: #383838;
     padding: 40px;
 }
 
-/* --- LA GRILLE DE CARTES --- */
+/* mes cartes liées ensemble pour éviter de les faire une par une (aide de l'IA) */
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    display: grid; /*activation du grid */
+    grid-template-columns: repeat(3, 1fr); /* création de ma grille */
+    gap: 30px; /*créer du vide entre les cartes */
 }
 
-/* --- LE DESIGN D'UNE CARTE PRODUIT --- */
+/* design par carte */
 .product-card {
     background-color: #c4c4c4;
-    border-radius: 8px;
+    border-radius: 8px; /* angle arrondi*/
     padding: 15px;
-    position: relative;
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4); 
+    position: relative; /*pour avoir la carte en repère spatial */
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4); /*effet halo */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*empile les éléments de haut en bas */
 }
 
-/* --- L'IMAGE DE LA CHAUSSURE --- */
+/* image chaussure*/
 .shoe-img {
     width: 100%;
     height: 150px; /* Fixe une hauteur pour que toutes les cartes soient alignées */
@@ -90,7 +90,7 @@
 /* L'icône coeur */
 .heart-icon {
     position: absolute;
-    top: 55%;
+    top: 55%; /*positionnement du coeur sur la carte */
     right: 15px;
     font-size: 20px;
     cursor: pointer;
@@ -118,5 +118,5 @@
 .shoe-price {
     font-size: 14px;
     font-weight: bold;
-    align-self: flex-end;
+    align-self: flex-end; /* pousse le texte en bout de carte*/
 }
