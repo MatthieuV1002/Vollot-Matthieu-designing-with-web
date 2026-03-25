@@ -1,3 +1,5 @@
+/*j'ai aussi utilisé l'IA pour cette partie de la même manière que pour le html, avec l'utilisation de fonctions pour rendre la page web la plus propre possible*/
+
 /* réglages de base pour commencer à faire ma page */ 
 * {
     margin: 0; /*suppresion des marges par défaut */
@@ -7,7 +9,7 @@
 }
 
 /* partie haute de ma page */
-.top-bar { /* le point sert à faire référence à mon fichier html*/
+.barreduhaut { /* le point sert à faire référence à mon fichier html*/
     background-color: #e4e4e4; /*couleur de fond utilisée même référence que figma */
     padding: 20px 40px; /*création d'un espace dans ma barredu haut */
     display: flex; /* j'utilise pour aligner mes éléments */
@@ -15,37 +17,37 @@
     align-items: center; /*centrage vertical */
 }
 
-.top-filters span {
+.filtreshaut span {
     margin-left: 20px; /* permet que les textes ne soient pas collés*/
     font-size: 14px;/* taille de la police*/
     cursor: pointer; /* fait croire que le lien est cliquable */
 }
 
 /* partie principale de ma page*/
-.main-container {/* récupération des éléments de ma partie principale */
+.partieprincipale {/* récupération des éléments de ma partie principale */
     display: flex;
     min-height: 100vh; /*me permet d'avoir toute la hauteur occupée */
 }
 
 /* barre latérale*/
-.sidebar {
+.bande {
     width: 250px; /* fixe la largeur de la barre latérale*/
     background-color: #8c8c8c; /*couleur fond */
     padding: 40px 20px; /*espace pour éviter que le texte ne touche les bords */
     color: #1a1a1a; /*couleur texte */
 }
 
-.sidebar ul {
+.bande ul {
     list-style-type: none;  /*pour cacher les puces dela liste */
 }
 
-.model-list li {
+.listenom li {
     margin-bottom: 20px; /* espacement de chaque ligne*/
     font-size: 13px; /* taille police*/
     cursor: pointer; /*fait croire que c'est cliquable */
 }
 
-.filter-list li { /*même utilisation des éléments précédents */
+.filtreliste li { /*même utilisation des éléments précédents */
     margin-bottom: 20px;
     font-size: 14px;
     display: flex;
@@ -55,21 +57,21 @@
 }
 
 /* zone principale */
-.products-area {
+.zoneproduit {
     flex-grow: 1; /*permet de prendre toute la place restante */
     background-color: #383838;
     padding: 40px;
 }
 
 /* mes cartes liées ensemble pour éviter de les faire une par une (aide de l'IA) */
-.product-grid {
+.grilleproduit {
     display: grid; /*activation du grid */
     grid-template-columns: repeat(3, 1fr); /* création de ma grille */
     gap: 30px; /*créer du vide entre les cartes */
 }
 
 /* design par carte */
-.product-card {
+.carteproduit {
     background-color: #c4c4c4;
     border-radius: 8px; /* angle arrondi*/
     padding: 15px;
@@ -80,7 +82,7 @@
 }
 
 /* image chaussure*/
-.shoe-img {
+.imagechaussure {
     width: 100%;
     height: 150px; /* Fixe une hauteur pour que toutes les cartes soient alignées */
     object-fit: contain; /* Empêche l'image d'être coupée ou écrasée */
@@ -88,7 +90,7 @@
 }
 
 /* L'icône coeur */
-.heart-icon {
+.coeur {
     position: absolute;
     top: 55%; /*positionnement du coeur sur la carte */
     right: 15px;
@@ -97,25 +99,25 @@
 }
 
 /* Le texte dans la carte */
-.card-info {
+.info {
     display: flex;
     flex-direction: column;
 }
 
-.shoe-name {
+.nom {
     font-size: 14px;
     font-weight: bold;
     color: #333;
     margin-bottom: 5px;
 }
 
-.shoe-brand {
+.marque {
     font-size: 12px;
     color: #666;
     margin-bottom: 15px;
 }
 
-.shoe-price {
+.prix {
     font-size: 14px;
     font-weight: bold;
     align-self: flex-end; /* pousse le texte en bout de carte*/

@@ -1,3 +1,7 @@
+<!je me suis servi de l'IA pour faire mon code HTML et CSS, comme je ne connaissais pas la programmation dans ces langages, 
+je me suis servi de ce que l'on avait vu en cours pour les bases de mon code et ensuite j'ai utilisé l'IA pour les commandes spécifiques tel que la création de liste, l'importation des images ou
+pour faire la grille pour mettre les chaussures par exemple, j'ai commenté chaque ligne pour moi pour me permettre de retenir ce que faisait chacune des syntaxes et fonctions utilisées >
+
 <!DOCTYPE html> <!définition du type de document>
 <html lang="fr"> <!utilisation de la langue française>
 <head>
@@ -9,18 +13,18 @@
 </head> <!fermeture de la partie head>
 <body> <!ouverture de la partie body>
 
-    <header class="top-bar"> <!construction de la barre du haut>
+    <header class="barreduhaut"> <!construction de la barre du haut>
         <h1>Chaussures Lifestyle (6)</h1> <!affichage du titre de la page>
-        <div class="top-filters"> <!consturction de ma partie pour mes filtres>
+        <div class="filtreshaut"> <!consturction de ma partie pour mes filtres>
             <span>Marquer les filtres &darr;</span> <!affichage du texte ainsi que de la flèche vers le bas(commande trouvée sur internet)>
             <span>Trier par filtre &darr;</span>
         </div>
     </header>
 
-    <div class="main-container"> <!création de la partie princiaple de ma page web>
+    <div class="partieprincipale"> <!création de la partie princiaple de ma page web>
 
-        <aside class="sidebar"> <!création de la bande sur le côté pour mettre les noms et les filtres>
-            <ul class="model-list"> <!création d'une liste pour les noms de chaussures conseillé par IA>
+        <aside class="bande"> <!création de la bande sur le côté pour mettre les noms et les filtres>
+            <ul class="listenom"> <!création d'une liste pour les noms de chaussures conseillé par IA>
                 <li><b>FORUM LOW OG</b></li> <!ajout des noms en les mettant en gras avec b>
                 <li><b>GEL-QUANTUM 360 6 UTILITY</b></li>
                 <li><b>327</b></li>
@@ -31,7 +35,7 @@
 
             <br><br> <!me permet de sauter une ligne pour faire un espace sur ma bande latérale>
 
-            <ul class="filter-list"> <!j'ai repris le même modèle pour faire mes filtres que pour les noms de chaussures>
+            <ul class="filtreliste"> <!j'ai repris le même modèle pour faire mes filtres que pour les noms de chaussures>
                 <li>Genre <span>&#x2304;</span></li> <!reprise de la syntaxe pour liste en ajoutant le symbole de flèhe vers le bas, trouver via IA>
                 <li>Enfant <span>&#x2304;</span></li>
                 <li>Taille <span>&#x2304;</span></li>
@@ -40,67 +44,67 @@
             </ul>
         </aside>
 
-        <main class="products-area"> <!création de la zone où on voit les cartes des chaussures>
+        <main class="zoneproduit"> <!création de la zone où on voit les cartes des chaussures>
             
-            <div class="product-grid"> <!faire les chaussures sous forme de grille, vu via IA pour la commande>
+            <div class="grilleproduit"> <!faire les chaussures sous forme de grille, vu via IA pour la commande>
 
-                <div class="product-card"> <!création du contour de la chaussure>
-                    <img src="https://makerslab.em-lyon.com/dww/data/products/forum-low-og.png" alt="Forum Low OG" class="shoe-img"> <!récupération du lien de l'image>
-                    <span class="heart-icon">&#x2661;</span> <!récupération de l'icone de coeur pour liker>
-                    <div class="card-info"> <!boite pour mettre le texte sous la photo>
-                        <p class="shoe-name">Forum low og</p> <!écriture des infos relatives à la chaussure présentes sur la carte>
-                        <p class="shoe-brand">Adidas original<br>Men</p>
-                        <p class="shoe-price">79.90 €</p>
+                <div class="carteproduit"> <!création du contour de la chaussure>
+                    <img src="https://makerslab.em-lyon.com/dww/data/products/forum-low-og.png" alt="Forum Low OG" class="imagechaussure"> <!récupération du lien de l'image>
+                    <span class="coeur">&#x2661;</span> <!récupération de l'icone de coeur pour liker>
+                    <div class="info"> <!boite pour mettre le texte sous la photo>
+                        <p class="nom">Forum low og</p> <!écriture des infos relatives à la chaussure présentes sur la carte>
+                        <p class="marque">Adidas original<br>Men</p>
+                        <p class="prix">79.90 €</p>
                     </div>
                 </div>
 
-                <div class="product-card">
-                    <img src="https://makerslab.em-lyon.com/dww/data/products/gel-quantum-360-6-utility.png" alt="Gel Quantum" class="shoe-img">
-                    <span class="heart-icon">&#x2661;</span>
-                    <div class="card-info">
-                        <p class="shoe-name">Gel quantum 360 utility</p>
-                        <p class="shoe-brand">Asics<br>Men</p>
-                        <p class="shoe-price">44.90 €</p>
+                <div class="carteproduit">
+                    <img src="https://makerslab.em-lyon.com/dww/data/products/gel-quantum-360-6-utility.png" alt="Gel Quantum" class="imagechaussure">
+                    <span class="coeur">&#x2661;</span>
+                    <div class="info">
+                        <p class="nom">Gel quantum 360 utility</p>
+                        <p class="marque">Asics<br>Men</p>
+                        <p class="prix">44.90 €</p>
                     </div>
                 </div>
 
-                <div class="product-card">
-                    <img src="https://makerslab.em-lyon.com/dww/data/products/327.png" alt="327" class="shoe-img">
-                    <span class="heart-icon">&#x2661;</span>
-                    <div class="card-info">
-                        <p class="shoe-name">327</p>
-                        <p class="shoe-brand">New balance<br>Men</p>
-                        <p class="shoe-price">64.90 €</p>
+                <div class="carteproduit">
+                    <img src="https://makerslab.em-lyon.com/dww/data/products/327.png" alt="327" class="imagechaussure">
+                    <span class="coeur">&#x2661;</span>
+                    <div class="info">
+                        <p class="nom">327</p>
+                        <p class="marque">New balance<br>Men</p>
+                        <p class="prix">64.90 €</p>
                     </div>
                 </div>
 
-                <div class="product-card">
-                    <img src="https://makerslab.em-lyon.com/dww/data/products/air-vapormax-2021-fk.png" alt="Vapormax" class="shoe-img">
-                    <span class="heart-icon">&#x2661;</span>
-                    <div class="card-info">
-                        <p class="shoe-name">Air vapormax 2021 FK</p>
-                        <p class="shoe-brand">Nike<br>Men</p>
-                        <p class="shoe-price">59.90 €</p>
+                <div class="carteproduit">
+                    <img src="https://makerslab.em-lyon.com/dww/data/products/air-vapormax-2021-fk.png" alt="Vapormax" class="imagechaussure">
+                    <span class="coeur">&#x2661;</span>
+                    <div class="info">
+                        <p class="nom">Air vapormax 2021 FK</p>
+                        <p class="marque">Nike<br>Men</p>
+                        <p class="prix">59.90 €</p>
                     </div>
                 </div>
 
-                <div class="product-card">
-                    <img src="https://makerslab.em-lyon.com/dww/data/products/rs-z-lth.png" alt="RS-Z" class="shoe-img">
-                    <span class="heart-icon">&#x2661;</span>
-                    <div class="card-info">
-                        <p class="shoe-name">Rs-Z LTH</p>
-                        <p class="shoe-brand">Puma<br>Men</p>
-                        <p class="shoe-price">49.90 €</p>
+                <div class="carteproduit">
+                    <img src="https://makerslab.em-lyon.com/dww/data/products/rs-z-lth.png" alt="RS-Z" class="imagechaussure">
+                    <span class="coeur">&#x2661;</span>
+                    <div class="info">
+                        <p class="nom">Rs-Z LTH</p>
+                        <p class="marque">Puma<br>Men</p>
+                        <p class="prix">49.90 €</p>
                     </div>
                 </div>
 
-                <div class="product-card">
-                    <img src="https://makerslab.em-lyon.com/dww/data/products/mayze-classic.png" alt="Mayze Classic" class="shoe-img">
-                    <span class="heart-icon">&#x2661;</span>
-                    <div class="card-info">
-                        <p class="shoe-name">Mayze classic</p>
-                        <p class="shoe-brand">Puma<br>Women</p>
-                        <p class="shoe-price">44.90 €</p>
+                <div class="carteproduit">
+                    <img src="https://makerslab.em-lyon.com/dww/data/products/mayze-classic.png" alt="Mayze Classic" class="imagechaussure">
+                    <span class="coeur">&#x2661;</span>
+                    <div class="info">
+                        <p class="nom">Mayze classic</p>
+                        <p class="marque">Puma<br>Women</p>
+                        <p class="prix">44.90 €</p>
                     </div>
                 </div>
 
